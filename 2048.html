@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>2048</title>
+    <style>
+        .field {
+            background: white;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+        }
+
+        .scoreTab {
+            background: white;
+            position: absolute;
+            top: 0px;
+            font-family: Calibri;
+            font-size: inherit;
+            color: grey;
+            left: 1000px;
+        }
+
+        .turnsTab {
+            background: white;
+            position: absolute;
+            top: 60px;
+            font-family: Calibri;
+            font-size: inherit;
+            color: grey;
+            left: 1000px;
+        }
+        .maxTab{
+          background: white;
+          position: absolute;
+          top: 120px;
+          font-family: Calibri;
+          font-size: inherit;
+          color: grey;
+          left: 1000px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="field"><canvas id="2048" width="600" height="600"></canvas></div>
+    <div class="scoreTab"><canvas id="scorePanel" width="240" height="160"></canvas></div>
+
+    <div class="scoreTab">
+        <p id="score_tab"></p>
+    </div>
+    <div class="turnsTab">
+        <p id="turns_tab"></p>
+    </div>
+    <div class="maxTab">
+        <p id="max_tab"></p>
+    </div>
+
+    <script src="2048.js"></script>
+</body>
+</html>
